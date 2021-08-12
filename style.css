@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(134, 151, 38, 0.103);
+    color: black;
+    font-family: Rockwell Extra Bold,Rockwell Bold,monospace;
+    min-height: 100vh;
+}
+
+header{
+    font-size: 2rem;
+}
+
+header,form {
+    min-height: 20vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+form input, form button {
+    margin-top: -10rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+    border:none;
+    background-color: rgba(58, 57, 57, 0.438);
+}
+
+form button {
+    color: rgba(0, 0, 0, 0.657);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form button:hover {
+    color:white;
+}
+
+.todo-container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list {
+    min-width: 30%;
+    list-style: none;
+}
+
+.todo {
+    margin: 0.5rem;
+    font-size: 1.5rem;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    transition: all 0.5s ease;
+}
+
+.todo li {
+    flex: 1;
+}
+
+.trash-btn, .complete-btn {
+    background:rgb(189, 189, 189);
+    border:none;
+    padding:1rem;
+    cursor:pointer;
+}
+
+.complete-btn {
+    background: rgb(153, 224, 153);
+}
+
+.todo-item {
+    padding: 0.2rem 0.8rem;
+    
+}
+
+.bi-trash-fill, .bi-check2-square {
+    pointer-events: none;
+}
+
+.completed {
+    text-decoration: line-through;
+    background-color: rgb(153, 224, 153);
+}
+
+.fall {
+    transform: translateX(100px);
+    transition: all 0.6s ease;
+    opacity: 0;
+}
