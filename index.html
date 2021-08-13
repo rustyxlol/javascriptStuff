@@ -10,24 +10,23 @@
     <title>To-do list!</title>
 </head>
 <body>
-    <header>
-        My To-do List!
-    </header>
+    <div class="container">
+        <div class="to-do">
+          <h3>My To-Do List</h3>
+          <div class="input">
+            <input type="text" id="todo-input" name="todoinput" class="todo-input" required>
+            <button class="todo-button" type="submit">
+                <i class="bi bi-plus-square-fill"></i>
+            </button>
+          </div>
 
-    <form action="">
-        <input type="text" name="todoinput" class="todo-input">
-        <button class="todo-button" type="submit">
-            <i class="bi bi-plus-square-fill"></i>
-        </button>
-    </form>
-
-    <div class="todo-container">
-        <ul class="todo-list">
-            <div class="todo">
-                <!-- List is added/deleted here -->
-            </div>
-        </ul>
+          <div class="todo-container">
+            <ul id="task-list" class="todo-list"> 
+            </ul>  
+          </div>
+        </div> 
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
