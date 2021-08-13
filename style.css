@@ -40,6 +40,7 @@ h3 {
     color: rgba(0, 0, 0, 0.657);
     font-weight:600;
     cursor:pointer;
+    margin-right: 1px;
 }
 .input button, 
 .input input{
@@ -69,7 +70,7 @@ ul{
     color: black;
     font-weight:600;
     cursor:pointer;
-    margin-right: 15px;
+    margin-right: 14px;
     margin-top: 10px;
     
 }
