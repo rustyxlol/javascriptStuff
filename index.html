@@ -4,29 +4,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" integrity="sha384-tKLJeE1ALTUwtXlaGjJYM3sejfssWdAaWR2s97axw4xkiAdMzQjtOjgcyw0Y50KU" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <title>To-do list!</title>
+    <title>Stuff</title>
 </head>
 <body>
-    <div class="container">
-        <div class="to-do">
-          <h3>My To-Do List</h3>
-          <div class="input">
-            <input type="text" id="todo-input" name="todoinput" class="todo-input" required>
-            <button class="todo-button" type="submit">
-                <i class="bi bi-plus-square-fill"></i>
-            </button>
-          </div>
-
-          <div class="todo-container">
-            <ul id="task-list" class="todo-list"> 
-            </ul>  
-          </div>
-        </div> 
+    <div class="clock" style="padding:2%;">
+        <h2><span id="time"> TIME </span></h2>
+        <h3><span id="timeWords"></span></h3>
     </div>
 
+    <div class="quoteGenerator" style="padding:2%;" >
+        <h2><span id="quote"></span></h2>
+        <h3><span id="author"></span></h3>
+        <button class="quoteButton"> New Quote</button>
+    </div>
+
+    <div class="colorGenerator" style="padding:2%;">
+        <h1><span class="colorHex">#F8FAF0</span></h1>
+        <button class = "colorChangeButton" id="colorChangeButton">Generate Random Color!</button>
+    </div>
+
+    <div class="stopwatch" style="padding:2%;">
+        <h1><span id="timer"> 00:00:00 </span></h1>
+        <div class="buttonContainer">
+            <button class="btn reset" id="reset">reset</button>
+            <button class="btn start" id="start">start</button>
+            <button class="btn stop" id="stop">stop</button>
+        </div>
+    </div>
+
+    <div class="counter" style="padding:2%;">
+        <h1><span class="counterValue" id="counterValue">0</span><h1>
+        <div>
+            <div class="btnContainer">
+                <button id="decrease" class="ctrButton decrease"> decrease </button>
+                <button id="reset" class="ctrButton reset"> reset </button>
+                <button id="increase" class="ctrButton increase"> increase </button>
+                <input type="number" id = "variation" placeholder="var">
+            </div>
+        </div>
+    </div>
+
+    <div class="todo" style="padding:2%;">
+        <div class="td-container">
+            <div class="to-do">
+              <h3>My To-Do List</h3>
+              <div class="input">
+                <input type="text" id="todo-input" name="todoinput" class="todo-input" required>
+                <button class="todo-button" type="submit">
+                    Add
+                </button>
+              </div>
+              <div class="todo-container">
+                <ul id="task-list" class="todo-list">
+                </ul>
+              </div>
+            </div>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>

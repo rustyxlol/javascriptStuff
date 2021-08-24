@@ -1,35 +1,49 @@
-* {
-    box-sizing: content-box;
-} 
-body
-{
-    background-color: rgba(134, 151, 38, 0.103);
-    font-family: 'Poppins', sans-serif;
+*{
+    text-align: center;  
 }
-.to-do{
-    width:350px;
-    margin:50px auto;
-    padding:15px;
-    border-radius:8px;
-}
-h3 {
-    text-align:center;
-    margin-top:10px;
-    margin-bottom:15px;
+body{
+    background-color: rgb(248, 250, 240);
+    font-family: Rockwell Extra Bold,Rockwell Bold,monospace;
 }
 
+.myButton, input, .btn, .ctrButton, .colorChangeButton, .quoteButton, .to-do {
+	box-shadow:inset 1px -5px 0px -3px #a39c99;
+	background-color:#7a6e6a;
+	border:1px solid #807877;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Courier New;
+	font-size:20px;
+	padding:10px 18px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #574c47;
+}
+input {
+	width:90px;
+}
+::placeholder {
+    color:white;
+}
+.myButton:hover {
+	background-color:#1a1a1a;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+
 .input {
-   
     padding: 5px;
-    display:flex;
     justify-content: space-between;
 }
 .input input{
     background-color: rgba(58, 57, 57, 0.438);
     padding:8px 5px;
     margin-right:14px;
-    width:95%;
     border: none;
+	width:250px;
     border-style: none;
     outline:none;
 }
