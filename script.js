@@ -37,7 +37,7 @@ function hourToWord(hour) {
     if (hour > 12) {
         hour -= 12;
     }
-    return ones[hour];
+    return ones[Number(hour)];
 }
 
 function minutesToWords(minutes) {
@@ -67,7 +67,7 @@ function updateTime() {
     timeHeader.textContent = currentTime;
     timeWords.textContent =
         "IT IS " +
-        hourToWord(hours) + minutesToWords(minutes);
+        hourToWord(hours).toUpperCase() + minutesToWords(minutes).toUpperCase();
     setTimeout(updateTime, 1000);
 }
 
