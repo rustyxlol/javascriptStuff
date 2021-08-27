@@ -67,8 +67,7 @@ function updateTime() {
     timeHeader.textContent = currentTime;
     timeWords.textContent =
         "IT IS " +
-        hourToWord(hours).toUpperCase() +
-        minutesToWords(minutes).toUpperCase();
+        hourToWord(hours) + minutesToWords(minutes);
     setTimeout(updateTime, 1000);
 }
 
